@@ -1,0 +1,71 @@
+/* ============ Experience ============ */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  padding-left: 28px;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent-cyan), var(--accent-violet), transparent);
+  border-radius: 2px;
+}
+
+.experience-item {
+  padding: 20px 22px;
+  position: relative;
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 26px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  border: 2px solid var(--bg-primary);
+  box-shadow: 0 0 8px rgba(102, 224, 255, 0.4);
+}
+
+.experience-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.experience-role {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.experience-period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent-violet);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(179, 119, 255, 0.1);
+  border: 1px solid rgba(179, 119, 255, 0.15);
+  white-space: nowrap;
+}
+
+.experience-desc {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}

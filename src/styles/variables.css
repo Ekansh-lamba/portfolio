@@ -1,0 +1,63 @@
+/* ============ Design Tokens ============ */
+:root {
+  /* Background layers */
+  --bg-primary: #0a0e17;
+  --bg-secondary: #0f1520;
+  --bg-tertiary: #141c2b;
+  --bg-card: rgba(15, 21, 32, 0.7);
+
+  /* Glass */
+  --glass-bg: rgba(15, 21, 35, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-border-hover: rgba(102, 224, 255, 0.3);
+  --glass-blur: 16px;
+
+  /* Text */
+  --text-primary: #e8eef8;
+  --text-secondary: #8b98b0;
+  --text-muted: #5a6680;
+
+  /* Accents */
+  --accent-cyan: #66e0ff;
+  --accent-violet: #b377ff;
+  --accent-green: #6df1a2;
+  --accent-amber: #ffd166;
+  --accent-rose: #ff6b8a;
+
+  /* Gradients */
+  --gradient-accent: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+  --gradient-card: linear-gradient(180deg, rgba(15, 21, 32, 0.8), rgba(20, 28, 43, 0.6));
+  --gradient-glow-cyan: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(102, 224, 255, 0.06), transparent 40%);
+
+  /* Typography */
+  --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-heading: 'Space Grotesk', 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Sizing */
+  --container-max: 1120px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
+  --shadow-glow-cyan: 0 0 20px rgba(102, 224, 255, 0.15);
+  --shadow-glow-violet: 0 0 20px rgba(179, 119, 255, 0.15);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+
+  /* Z-index */
+  --z-loader: 9999;
+  --z-nav: 100;
+  --z-overlay: 50;
+}

@@ -1,0 +1,96 @@
+/* ============ Footer ============ */
+.site-footer {
+  border-top: 1px solid var(--glass-border);
+  background: rgba(10, 14, 23, 0.7);
+  padding: 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.footer-text {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.footer-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 21, 32, 0.6);
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.footer-to-top:hover {
+  transform: translateY(-3px);
+  border-color: var(--glass-border-hover);
+  color: var(--accent-cyan);
+  box-shadow: var(--shadow-glow-cyan);
+}
+
+/* Education inline in footer area or its own section */
+.education-card {
+  padding: 24px;
+}
+
+.education-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.education-degree {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.education-period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent-cyan);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(102, 224, 255, 0.08);
+  border: 1px solid rgba(102, 224, 255, 0.15);
+}
+
+.education-school {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.education-gpa {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--accent-green);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
+    height: auto;
+  }
+}

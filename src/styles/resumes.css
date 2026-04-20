@@ -1,0 +1,120 @@
+/* ============ Resumes ============ */
+.resumes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.resume-card {
+  padding: 28px 24px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-card.selected {
+  border-color: var(--accent-cyan);
+  box-shadow: var(--shadow-glow-cyan);
+}
+
+.resume-card.selected::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-accent);
+}
+
+.resume-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  margin: 0 auto 16px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  transition: transform var(--duration-normal) var(--ease-spring);
+}
+
+.resume-card:hover .resume-icon {
+  transform: scale(1.1);
+}
+
+.resume-icon.ai {
+  background: rgba(102, 224, 255, 0.1);
+  color: var(--accent-cyan);
+}
+
+.resume-icon.fullstack {
+  background: rgba(179, 119, 255, 0.1);
+  color: var(--accent-violet);
+}
+
+.resume-icon.data {
+  background: rgba(109, 241, 162, 0.1);
+  color: var(--accent-green);
+}
+
+.resume-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.resume-card-desc {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.resume-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.resume-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.resume-btn-preview {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+}
+
+.resume-btn-preview:hover {
+  border-color: var(--glass-border-hover);
+  color: var(--accent-cyan);
+}
+
+.resume-btn-download {
+  background: var(--gradient-accent);
+  color: #071018;
+  font-weight: 700;
+}
+
+.resume-btn-download:hover {
+  box-shadow: 0 4px 16px rgba(102, 224, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .resumes-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
