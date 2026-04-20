@@ -131,7 +131,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className="hero-photo-ring">
-            <img className="hero-photo" src="/images/profile.jpg" alt="Ekansh Lamba" />
+            <img className="hero-photo" src={`${import.meta.env.BASE_URL}images/profile.jpg`} alt="Ekansh Lamba" />
           </div>
           <div className="hero-photo-dots" aria-hidden="true">
             {[...Array(9)].map((_, i) => (

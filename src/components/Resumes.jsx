@@ -10,7 +10,7 @@ const RESUMES = [
     icon: <FiCpu size={24} />,
     iconClass: 'ai',
     desc: 'For ML engineering, research, and AI-focused roles. Highlights RL, CNNs, and computer vision projects.',
-    file: '/resumes/Ekansh_Lamba_AI_ML.pdf',
+    file: import.meta.env.BASE_URL + 'resumes/Ekansh_Lamba_AI_ML.pdf',
   },
   {
     id: 'fullstack',
@@ -18,7 +18,7 @@ const RESUMES = [
     icon: <FiCode size={24} />,
     iconClass: 'fullstack',
     desc: 'For full stack developer and SWE roles. Emphasizes Spring Boot, React, REST APIs, and system design.',
-    file: '/resumes/Ekansh_Lamba_FullStack.pdf',
+    file: import.meta.env.BASE_URL + 'resumes/Ekansh_Lamba_FullStack.pdf',
   },
   {
     id: 'data',
@@ -26,7 +26,7 @@ const RESUMES = [
     icon: <FiBarChart2 size={24} />,
     iconClass: 'data',
     desc: 'For data analysis and business intelligence roles. Focuses on Pandas, feature engineering, and insights.',
-    file: '/resumes/Ekansh_Lamba_DataAnalyst.pdf',
+    file: import.meta.env.BASE_URL + 'resumes/Ekansh_Lamba_DataAnalyst.pdf',
   },
 ];
 
